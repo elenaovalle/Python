@@ -1,8 +1,8 @@
 #Load SQL database
-#Load Yardi PERSON Table
+#Load PERSON Table
 sSql = """
 Select UCODE, HMY, FIRSTNAME, LASTNAME, Replace(SFID, '-', '') as ID, PHONENUM0, EMAIL, dtLastModified, dtCreated, ADDR1, SCITY, STATE, ZIPCODE
 From PERSON
 Where UCODE like 'p0%'
 """
-YPerson = util.executeDataFrame(sSql, connYardi) "
+YPerson = util.executeDataFrame(Sql, connPERSON) "
